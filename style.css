@@ -1,16 +1,17 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   height: 100vh;
   display: flex;
-	background-image: linear-gradient(to right, rgb(39, 9, 87), rgb(187, 3, 64));
+	background-image: linear-gradient(to right, rgb(39, 9, 87), rgb(243, 45, 111));
   align-items: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
-  font-size: 18px;
+  
 }
 .container {
   width: 100vw;
@@ -20,11 +21,11 @@ body {
 
 .box {
 	position: relative;
-  padding: 20px;
+  padding: auto;
   background-color: #181818;
   width: 900px;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .lista {
@@ -36,7 +37,13 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+  *{
+    font-size: 5vw;
+  }
 	.box {
 		width: 90vw;
+    
 	}
 }
+ 
+  
